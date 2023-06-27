@@ -17,7 +17,7 @@ module.exports = {
   module: {
     rules: [
       {
-        test: /.css$/, //匹配所有的 css 文件
+        test: /\.css$/, //匹配所有的 css 文件
         include: [path.resolve(__dirname, '../src')],
         use: [
           isDev ? 'style-loader' : MiniCssExtractPlugin.loader, // 开发环境使用style-looader,打包模式抽离css
@@ -26,7 +26,7 @@ module.exports = {
         ],
       },
       {
-        test: /.less$/, //匹配所有的 less 文件
+        test: /\.less$/, //匹配所有的 less 文件
         include: [path.resolve(__dirname, '../src')],
         use: [
           isDev ? 'style-loader' : MiniCssExtractPlugin.loader, // 开发环境使用style-looader,打包模式抽离css
@@ -50,7 +50,7 @@ module.exports = {
           },
         },
         generator: {
-          filename:'static/images/[name].[contenthash:8][ext]', // 文件输出目录和命名
+          filename: 'static/images/[name].[contenthash:8][ext]', // 文件输出目录和命名
         },
       },
       {
@@ -62,7 +62,7 @@ module.exports = {
           },
         },
         generator: {
-          filename:'static/fonts/[name].[contenthash:8][ext]', // 文件输出目录和命名
+          filename: 'static/fonts/[name].[contenthash:8][ext]', // 文件输出目录和命名
         },
       },
       {
@@ -74,7 +74,7 @@ module.exports = {
           },
         },
         generator: {
-          filename:'static/media/[name].[contenthash:8][ext]', // 文件输出目录和命名
+          filename: 'static/media/[name].[contenthash:8][ext]', // 文件输出目录和命名
         },
       },
     ],
