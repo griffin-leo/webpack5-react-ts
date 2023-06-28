@@ -1,14 +1,7 @@
 import React, { useState } from 'react';
 // import Class from '@/components/Class';
+import Game from '@/components/Game';
 import './app.less';
-
-function MyButton() {
-  return (
-    <>
-      <button>I'm a button</button>
-    </>
-  );
-}
 
 function App() {
   const [count, setCounts] = useState('');
@@ -24,6 +17,8 @@ function App() {
       <p>非受控组件</p>
       <input type="text" />
       {/* <Class /> */}
+      <p>井字棋游戏</p>
+      <Game />
     </>
   );
 }
